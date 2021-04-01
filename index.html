@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/main.css" type="text/css" rel="stylesheet">
+    <title>Mantas's Portfolio</title>
+    <!-- Written by Mantas Šakalis, 2021 -->
+</head>
+
+<body>
+
+    <div class="main" id="very-top">
+
+        <div class="flex-container container mantas-sakalis">
+            <span class="mantas">Mantas</span>
+            <span class="sakalis">Šakalis</span>
+        </div>
+
+        <div class="flex-container container view-my-work">
+            <button class="view-my-work-button" id="myBtn" title="About Me" onclick="window.location.href='#about-me'">
+                <span class="blink">About Me</span>
+            </button>
+
+            <div id="line"></div>
+
+        </div>
+
+    </div> <!--  .main  -->
+
+    <div id="about-me"></div>
+    <div class="flex-container container content-section">
+
+        <nav class="flex-container container" id="navbar">
+            <span><a href="#very-top">Back to Top</a></span>
+            <span><a href="#about-me">About Me</a></span>
+            <span><a href="#work-done">Work done</a></span>
+            <span><a href="#contact-me">Contact Me</a></span>
+
+        </nav>
+
+        <!-- Script for Navigation to stick at the point of scroll -->
+        <script>
+            window.onscroll = function () { myFunction() };
+
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+
+        <div class="flex-container container bio">
+
+            <h1 class="bio-title">About Me</h1>
+
+            <p class="bio-text">Hello there, my name is Mantas Šakalis. I am 26-years-old man. Currently learning
+                programming to hopefully become a Software Developer one day. I have been learning it for a few months
+                now. Already I am able to create a Website from scratch using HTML & CSS and a little bit of Javascript.
+            </p>
+            <p class="bio-text">The main focus at the moment is on mastering React Javascript. And later on, I am
+                considering learning Laravel PHP.
+            </p>
+            <p class="bio-text">Learning by myself at home. I am going through courses on Udemy, Codecademy, etc.</p>
+            <p class="bio-text">I grew up partialy with fingers on the keyboard. Not only in my personal life but in
+                work life as well.</p>
+            <p class="bio-text">Since 17-years-old I was working in various Mailing & Logistics companies. From picking
+                order, to
+                driving pallets, managing stock, routes, users on various systems, like SPA Stock Management Systems,
+                Post NL Mailing Systems, Correos Post Mailing Systems, P2P Mailing Systems, etc.</p>
+            <p class="bio-text">I do have a little bit of experience with many different Applications like Photoshop,
+                VSC, GitHub, Excell, Word, etc. I do know and can use some CMSs - Wordpress, Shopify.</p>
+
+        </div>
+
+
+
+    </div>
+
+    <div id="line-2"></div>
+
+
+    <h1 class="bio-title" id="work-done">Work Done</h1>
+    <div class="flex-container container content-section-2">
+
+
+        <a href="./images/workdone-the-tea-cozy-large.jpg">
+            <img src="./images/workdone-the-tea-cozy-small.jpg">
+        </a>
+
+        <a href="./images/workdone-tsunami-coffee-large.jpg">
+            <img src="./images/workdone-tsunami-coffee-small.jpg">
+        </a>
+
+        <a href="./images/workdone-number-guesser-large.jpg">
+            <img src="./images/workdone-number-guesser-small.jpg">
+        </a>
+
+        <a href="./images/workdone-to-do-large.jpg">
+            <img src="./images/workdone-to-do-small.jpg">
+        </a>
+
+
+    </div>
+
+
+    <h1 class="bio-title" id="contact-me">Contact Me</h1>
+    <div class="flex-container container content-section-3">
+
+
+
+        <button class="view-my-work-button" id="contact-email" title="Email me at mantas.sakalis@gmail.com"
+            onclick="window.location.href='mailto:mantas.sakalis@gmail.com'">
+            <span>Email me at mantas.sakalis@gmail.com</span>
+        </button>
+
+        <button class="view-my-work-button" id="contact-email" title="Call/SMS/WhatsApp me at 00 31 6 84 85 64 91"
+            onclick="window.location.href='callto:0031684856491'">
+            <span>Call/SMS/WhatsApp me at 00 31 6 84 85 64 91</span>
+        </button>
+
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
